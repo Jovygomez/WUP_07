@@ -34,30 +34,39 @@ $A_0$ There is a diffrence in dying depending on sex.
 
 
 result~sex
-categorical~categorical
+categorical~categorical. 
 We will use the helper file CAT~CAT
-
-
 
 
 ## Graphical results - use ggplot commands to do this  
 
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
+```
+
+The bar chart shows that more males died than female. This shows that dying dependent on sex .  
 
 
-  
-
-
-
-
-
-  
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result+ Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical results shows that amoung the people who dies was 64% of males who died and 36% of females who died. 
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+The infrential results shows that the chi-squared test has a p-value of 0.001, and the the Fishers exact test has a p-value of 0.00009 because both of the p-values are under the acceptable rate of 0.05 we will reject the null hypothesis. The Fishers Exact test also states that men are 2.3 more times to die of Covid19 in Korea than women are
 
 ## Conclusions
 
