@@ -66,7 +66,25 @@ chisqtestGC(table1)
 fisher.test(table1)
 ```
 
-The infrential results shows that the chi-squared test has a p-value of 0.001, and the the Fishers exact test has a p-value of 0.00009 because both of the p-values are under the acceptable rate of 0.05 we will reject the null hypothesis. The Fishers Exact test also states that men are 2.3 more times to die of Covid19 in Korea than women are
+The infrential results shows that the chi-squared test has a p-value of 0.001, and the the Fishers exact test has a p-value of 0.00009 because both of the p-values are under the acceptable rate of 0.05 we will reject the null hypothesis. The Fishers Exact test also states that men are 2.3 more times to die of Covid-19 in Korea than women are
 
 ## Conclusions
+
+Question- Is dying independent of sex?
+
+$H_0$ There is no difference in dying depending on sex.  
+$A_0$ There is a difference in dying depending on sex. 
+
+This data from Korea in 2022 
+result~sex
+categorical~categorical 
+We will use the helper file CAT~CAT
+
+We will reject the null hypothesis because, the barchart shows that more males died than females.  
+
+The numerical results results shows that amoung the people who dies there were 64% of males who died and 36% of females who died. 
+
+The infrential results shows that the chi-squared that has the P-value of 0.001, and the Fishers exact test has the P-value of 0.00009 because both of the P-values are under the acceptable rate of 0.05 we will reject the null hypothesis . The Fishers Exact test also states that men are 2.3 more times to die of Covid 19 to Korea than women are. 
+
+
 
